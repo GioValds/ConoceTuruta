@@ -1542,3 +1542,104 @@ body {
     transform: translateY(0);
   }
 }
+      
+
+
+
+
+
+
+
+
+
+
+.choose-route {
+  background: linear-gradient(45deg, #1b1f38, #232a44, #1b1f38);
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  margin: 2rem auto;
+  max-width: 600px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.choose-header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #ff6a3d;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.choose-text {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.route-button {
+  background-color: #ff6a3d;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.route-button:hover {
+  background-color: #ff835c;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Estilos para los enlaces en la sección 'sabias-que' */
+.sabias-grid a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Asegura que herede el color de texto del contenedor */
+  display: block; /* Hace clic en todo el contenedor del enlace */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añade efecto */
+}
+
+.sabias-grid a:hover {
+  transform: scale(1.05); /* Agranda ligeramente la tarjeta al pasar el mouse */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Añade un efecto de sombra */
+}
+
+/* Estilos para los textos dentro de las tarjetas */
+.sabias-grid h3 {
+  margin: 10px 0 5px; /* Ajusta el espacio superior e inferior */
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff; /* Color del texto */
+}
+
+.sabias-grid p {
+  margin: 0;
+  font-size: 1rem;
+  color: #b0b3b8; /* Color del texto */
+}
+
+/* Imágenes dentro de las tarjetas */
+.sabias-image {
+  width: 100%; /* Ocupa todo el ancho */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 10px; /* Bordes redondeados */
+}

@@ -3,7 +3,7 @@ import './App.css';
 
 // Elementos del carrusel
 const mediaItems = [
-  { type: 'image', src: 'https://i.imgur.com/iVRjTQ3.jpeg', alt: 'Imagen 1' },
+  { type: 'image', src: 'https://i.imgur.com/QfAjwcQ.jpeg', alt: 'Imagen 1' },
   { type: 'video', src: 'https://i.imgur.com/qpWhJqC.mp4', alt: 'Video 1' },
   { type: 'image', src: 'https://i.imgur.com/MHCs1P6.jpeg', alt: 'Imagen 2' },
   { type: 'video', src: 'https://i.imgur.com/uJB1kqq.mp4', alt: 'Video 2' },
@@ -38,7 +38,7 @@ const rutasData = [
         </p>
       </div>
     `,
-    link: 'https://maps.app.goo.gl/BqsLuMZiRDGfgHf38',
+    link: 'https://maps.app.goo.gl/iijagarL9dciMF6E7 ',
   },
   
   {
@@ -206,7 +206,7 @@ const rutasData = [
   {
     id: 28,
     name: 'Ruta 28',
-    img: 'https://i.imgur.com/vJJVxDP.png', 
+    img: 'https://i.imgur.com/aKotkii.png', 
     imgPopup: 'https://i.imgur.com/CAdhGbl.png',
     info: `
       <div>
@@ -240,7 +240,7 @@ const rutasData = [
         </p>
       </div>
     `,
-    link: 'https://maps.app.goo.gl/iijagarL9dciMF6E7',
+    link: 'https://maps.app.goo.gl/TL81pviyEcZFAPb97 ',
   },
 
   {
@@ -340,6 +340,13 @@ function App() {
               <button onClick={goToNext} className="control-button">Siguiente ⟩</button>
             </div>
 
+            <div className="choose-route">
+              <h2>Encuentra tu Ruta Ideal</h2>
+              <button className="route-button" onClick={() => goToPage('rutas')}>
+                🌍 Ver Rutas
+              </button>
+            </div>
+
             {/* Misión y Visión */}
             <section className="mission-vision">
               <div className="mission">
@@ -372,7 +379,7 @@ function App() {
             {/* Nueva sección "¿Sabías que?" */}
             <section className="sabias-que">
   <h2 className="sabias-header">📘 ¿Sabías que?</h2>
-  <h2> 👆🖱️ Da click en la noticia </h2>
+  <h2> 👆🖱️ Da click en la Publicacion </h2>
   <div className="sabias-grid">
     <a href="https://www.instagram.com/p/DCVZY2isSMk/?img_index=1" target="_blank" rel="noopener noreferrer" className="sabias-item">
       <img src="https://i.imgur.com/HeIddwt.jpeg" alt="Causa 1" className="sabias-image" />
@@ -394,6 +401,16 @@ function App() {
       <h3>Conectividad</h3>
       <p>Una buena red de transporte mejora la productividad económica de las ciudades.</p>
     </a>
+    <a href="https://www.instagram.com/p/DCURJ1Txeoq/?img_index=1" target="_blank" rel="noopener noreferrer" className="sabias-item">
+      <img src="https://i.imgur.com/Xyr6lOn.jpeg" alt="Tiempo de Opinar" className="sabias-image" />
+      <h3>Tiempo de Opinar</h3>
+      <p>Porque nuestra opinión importa y cada vez reconocemos más la necesidad de una alianza en donde entre todos nos apoyemos. ¡Comparte tu opinión!</p>
+    </a>
+    <a href="https://www.instagram.com/p/DCNqV7gM8Az/?img_index=1" target="_blank" rel="noopener noreferrer" className="sabias-item">
+      <img src="https://i.imgur.com/cElz1eV.jpeg" alt="Desinformación" className="sabias-image" />
+      <h3>Desinformación</h3>
+      <p>Entra a la publicacion y dejanos tu Opinion!!</p>
+    </a>
   </div>
 </section>
 
@@ -414,12 +431,7 @@ function App() {
             </section>
 
             {/* Botón para elegir ruta */}
-            <div className="choose-route">
-              <h2>Encuentra tu Ruta Ideal</h2>
-              <button className="route-button" onClick={() => goToPage('rutas')}>
-                🌍 Ver Rutas
-              </button>
-            </div>
+           
           </>
         );
 
