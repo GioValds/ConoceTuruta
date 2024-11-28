@@ -474,30 +474,32 @@ function App() {
         case 'sobre':
           return (
             <div className="page-content sobre-nosotros">
-              <h2 className="sobre-header">Sobre Nosotros</h2>
+              <h2 className="sobre-header">✨ Sobre Nosotros ✨</h2>
               <div className="sobre-container">
                 <div className="sobre-text">
                   <p>
-                    Somos un grupo de estudiantes apasionados que desarrollamos este proyecto con el objetivo de responder a las necesidades de transporte en nuestra comunidad. 
-                    Nuestro enfoque es brindar información clara y accesible sobre las rutas de transporte público en San Juan del Río, mejorando así la calidad de vida de los usuarios.
+                    Somos un grupo de estudiantes apasionados que desarrollamos este proyecto con el objetivo de responder a
+                    las necesidades de transporte en nuestra comunidad. Nuestro enfoque es brindar información clara y accesible
+                    sobre las rutas de transporte público en San Juan del Río, mejorando así la calidad de vida de los usuarios.
+                  </p>
+                  <img src="https://i.imgur.com/o46dwxc.jpeg" alt="nosotros" className="nosotros-iamge" />
+                  <p>
+                    Este proyecto fue desarrollado como parte de un trabajo académico, pero con una visión real de impacto social
+                    y tecnológico. Queremos ser una herramienta que conecte a las personas con sus destinos de manera eficiente y confiable.
                   </p>
                   <p>
-                    Este proyecto fue desarrollado como parte de un trabajo académico, pero con una visión real de impacto social y tecnológico. Queremos ser una herramienta que conecte a las personas con sus destinos de manera eficiente y confiable.
-                  </p>
-                  <p>
-                    ¡Gracias por visitarnos! Si tienes alguna sugerencia o comentario, no dudes en contactarnos a través de nuestras redes sociales.
+                    ¡Gracias por visitarnos! Si tienes alguna sugerencia o comentario, no dudes en contactarnos a través de nuestras
+                    redes sociales. Juntos podemos mejorar el acceso al transporte en nuestra región.
                   </p>
                 </div>
-                <div className="sobre-images">
-                  <img src="https://via.placeholder.com/300" alt="Estudiantes trabajando" className="sobre-image" />
-                  <img src="https://via.placeholder.com/300" alt="Presentación del proyecto" className="sobre-image" />
-                </div>
+                <img src="https://i.imgur.com/4BuTmsM.jpeg" alt="Qr" className="qr-iamge" />             
               </div>
               <button className="back-button" onClick={() => goToPage('home')}>
-                Regresar al Inicio
+                🔙 Regresar al Inicio
               </button>
             </div>
           );
+        
         
 
       default:
